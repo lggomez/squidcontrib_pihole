@@ -24,7 +24,7 @@ This repo consists of 3 parts:
 
 Lists in the `/domains` directory can be added by their raw link to Pi-hole by category:
 
-###i.e: phishing:
+### i.e: phishing:
 
 ```
 https://media.githubusercontent.com/media/lggomez/squidcontrib_pihole/main/domains/phishing/domains.txt
