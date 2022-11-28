@@ -7,7 +7,7 @@ import tempfile
 
 MAIN_DOMAINS_DIR = "domains"
 COMPRESSED_EXT = ".tar.gz"
-AGGREGATE = True
+AGGREGATE = False
 
 
 def main():
@@ -40,8 +40,9 @@ def main():
 
 def decompress_files(decompress, list_files):
     if decompress:
+        list_files.sort()
         print("Decompressing list files:")
-        print(list_files)
+        print('\n'.join(map(str, list_files)))
         for listFile in list_files:
             tar = tarfile.open(listFile, "r:gz")
             for member in tar.getmembers():
