@@ -6,7 +6,13 @@
 
 This project is an adaptation of Fabrice Prigent's **Blacklists UT1** project which is available at https://dsi.ut-capitole.fr/blacklists/index_en.php
 
-While the project offers extensive flexibility for HTTP proxy solutions it lacks the DNS-list format that Pi-hole uses, making it not usable without a manual setup and hosting; Also the lists contain IPs, which Pi-hole does not aim to block
+While the project offers extensive flexibility for HTTP proxy solutions it lacks the DNS-list format that [Pi-hole](https://pi-hole.net/) uses, making it not usable without a manual setup and hosting; Also the lists contain IPs, which Pi-hole does not aim to block
+
+These lists are also usable with [uBlock origin](https://github.com/gorhill/uBlock) as they can be added as custom filter lists with the same level of compatibility as with Pi-hole
+
+### Note
+
+If you already use some of the popular lists like the ones linked and provided by [Firebog](https://firebog.net/), you may notice most of these are overlaps (due to being sources of said lists). If you want some more fine-grained control you may use several lists of varying categories or other maintained aggregates; It's always your choice
 
 This repo consists of 3 parts:
 
